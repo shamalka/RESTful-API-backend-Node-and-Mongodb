@@ -1,0 +1,24 @@
+{
+  "name": "restful-api-backend-node-and-mongodb",
+  "version": "1.0.0",
+  "description": "Doctor Channeling app RESTful API backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamalka/RESTful-API-backend-Node-and-Mongodb.git"
+  },
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "mongoose": "*"
+  },
+  "author": "Shamalka Navod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shamalka/RESTful-API-backend-Node-and-Mongodb/issues"
+  },
+  "homepage": "https://github.com/shamalka/RESTful-API-backend-Node-and-Mongodb#readme"
+}
