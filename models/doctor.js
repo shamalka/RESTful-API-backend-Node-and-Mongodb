@@ -6,6 +6,14 @@ var doctorSchema = mongoose.Schema({
         type:String,
         required:true
     },
+    speciality:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        required:true
+    },
     create_date:{
         type:Date,
         default:Date.now
@@ -15,7 +23,12 @@ var doctorSchema = mongoose.Schema({
 //to be able to access this object from outside
 var Doctor = module.exports = mongoose.model('Doctor', doctorSchema);
 
-//Ger doctors
+//Get doctors
 module.exports.getDoctors = function(callback, limit){
     Doctor.find(callback).limit(limit);
+}
+
+//Get doctor
+module.exports.getDoctorById = function(id, callback){
+    Doctor.findById(id, callback);
 }
